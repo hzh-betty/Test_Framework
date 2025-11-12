@@ -18,9 +18,13 @@ class RecordLog:
     @staticmethod
     def handle_overdue_log():
         """Delete logs older than 7 days"""
+
+        # 1. Calculate the timestamp for 7 days ago
         now_time = datetime.datetime.now()
-        offset_date = datetime.timedelta(days=7)
+        offset_date = datetime.timedelta(days=-7)
         before_date = (now_time + offset_date).timestamp()
+
+        # 2. Delete files older than 7 days
         for file in os.listdir(log_path):
             file_name = os.path.join(log_path, file)
             if os.path.isfile(file_name):
