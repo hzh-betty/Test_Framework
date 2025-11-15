@@ -78,3 +78,6 @@ class OperatorConfig:
 
     def get_section_ssh(self, option):
         return self.get_section_for_data("SSH", option)
+
+    def get_section_jenkins(self, option):
+        return self.get_section_for_data("JENKINS", option)
