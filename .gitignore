@@ -1,0 +1,10 @@
+# -----------------------
+# PyCharm / JetBrains
+# -----------------------
+*.pyc
+/common/__pycache__
+/.idea
+/report/temp
+.venv/
+.vscode/
+
