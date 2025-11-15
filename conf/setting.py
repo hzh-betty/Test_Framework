@@ -26,7 +26,7 @@ FILE_PATH = {
     'EXTRACT': os.path.join(ROOT_DIR, 'extract.yaml'),
     'XML': os.path.join(ROOT_DIR, 'data/sql'),
     'RESULT_XML': os.path.join(ROOT_DIR, 'report'),
-    'EXCEL': os.path.join(ROOT_DIR, 'data', '测试数据.xls')
+    'EXCEL': os.path.join(ROOT_DIR, 'data', 'test_data.xlsx')
 }
 
 # Define login request headers
