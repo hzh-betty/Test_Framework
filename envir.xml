@@ -1,0 +1,38 @@
+<environment>
+    <parameter>
+        <key>Browser</key>
+        <value>Edge</value>
+    </parameter>
+    <parameter>
+        <key>system</key>
+        <value>Window11</value>
+    </parameter>
+    <parameter>
+        <key>python version</key>
+        <value>3.13.9</value>
+    </parameter>
+    <parameter>
+        <key>allure version</key>
+        <value>allure-2.13.8</value>
+    </parameter>
+    <parameter>
+        <key>BaseUrl</key>
+        <value>https://www.baidu.com</value>
+    </parameter>
+    <parameter>
+        <key>environment</key>
+        <value>生产环境</value>
+    </parameter>
+    <parameter>
+        <key>Project</key>
+        <value>xxx项目接口自动化测试</value>
+    </parameter>
+    <parameter>
+        <key>email</key>
+        <value>beidi_993@qq.com</value>
+    </parameter>
+    <parameter>
+        <key>author</key>
+        <value>betty</value>
+    </parameter>
+</environment>
