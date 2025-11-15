@@ -3,7 +3,7 @@
 # -----------------------
 *.pyc
 /common/__pycache__
-/.idea
+.idea
 /report/temp
 .venv/
 .vscode/

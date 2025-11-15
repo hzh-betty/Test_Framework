@@ -20,7 +20,7 @@ dd_msg = False  # Enable DingTalk message notifications
 FILE_PATH = {
     'CONFIG': os.path.join(ROOT_DIR, 'conf/config.ini'),
     'LOG': os.path.join(ROOT_DIR, 'logs'),
-    'YAML': os.path.join(ROOT_DIR),
+    'YAML': os.path.join(ROOT_DIR,'extract.yaml'),
     'TEMP': os.path.join(ROOT_DIR, 'report/temp'),
     'TMR': os.path.join(ROOT_DIR, 'report/tm_report'),
     'EXTRACT': os.path.join(ROOT_DIR, 'extract.yaml'),

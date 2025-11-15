@@ -1,6 +1,6 @@
 import os.path
 import xml.etree.ElementTree as et
-import setting
+import conf.setting as setting
 from common.record_log import logs
 
 
