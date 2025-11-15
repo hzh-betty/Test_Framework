@@ -62,6 +62,19 @@ class OperatorYaml:
         except Exception as e:
             logs.error(f"Error clearing YAML file {self.__file_path}: {e}")
 
+    def get_extract_yaml(self, node_name, second_node_name=None):
+        if os.path.exists(FILE_PATH['EXTRACT']):
+            pass
+        else:
+            logs.error(f'extract.yaml not found at {FILE_PATH["EXTRACT"]}')
+        try:
+                if second_node_name is None:
+                    return self.__data[node_name]
+                else:
+                    return self.__data[node_name][second_node_name]
+        except Exception as e:
+                logs.error(f'Error retrieving data from extract.yaml: {e}')
+                return None
 
 if '__main__' == __name__:
     oy = OperatorYaml()
