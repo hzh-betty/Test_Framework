@@ -3,6 +3,26 @@ import os
 from record_log import logs
 from conf.setting import FILE_PATH
 from conf.operator_config import OperatorConfig
+def get_testcase_yaml(file):
+    testcase_list = []
+    try:
+        with open(file, 'r', encoding='utf-8') as f:
+            data = yaml.safe_load(f)
+            if len(data) <= 1:
+                yam_data = data[0]
+                base_info = yam_data.get('baseInfo')
+                for ts in yam_data.get('testCase'):
+                    param = [base_info, ts]
+                    testcase_list.append(param)
+                return testcase_list
+            else:
+                return data
+    except UnicodeDecodeError:
+        logs.error(f"get_testcase_yaml: file 【{file}】 encoding error, please check if it is utf-8")
+    except FileNotFoundError:
+        logs.error(f'get_testcase_yaml: file 【{file}】 not found')
+    except Exception as e:
+        logs.error(f'get_testcase_yaml: unexpected error: {e}')
 
 class OperatorYaml:
     def __init__(self, file_path=None):
